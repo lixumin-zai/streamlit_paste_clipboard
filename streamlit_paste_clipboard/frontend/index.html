@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>剪切板图片获取</title>
+    <style>
+        body {
+            margin: 0; /* 移除边距 */
+            display: flex; /* 使用Flex布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            min-height: 100vh; /* 确保body至少与视口一样高 */
+        }
+        #image-container {
+            width: 300px;  /* 容器的固定宽度 */
+            height: 300px; /* 容器的固定高度 */
+            display: flex; /* 使用Flex布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            overflow: hidden; /* 超出部分隐藏 */
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* 渐变背景 */
+            border-radius: 15px; /* 圆角边框 */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+            border: 2px dashed #ffffff; /* 虚线边框 */
+            color: #ffffff; /* 文本颜色 */
+            font-family: Arial, sans-serif; /* 字体样式 */
+            font-size: 16px; /* 字体大小 */
+            text-align: center; /* 文本居中 */
+        }
+        #image-container img {
+            max-width: 100%; /* 最大宽度为容器宽度 */
+            max-height: 100%; /* 最大高度为容器高度 */
+            object-fit: cover; /* 图片填充方式 */
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <p>Paste Clipboard</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
