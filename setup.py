@@ -15,7 +15,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="",
     packages=setuptools.find_packages(where="."),
-    classifiers=[],
+    include_package_data=True,
     python_requires=">=3.8",
     install_requires=[
         # By definition, a Custom Component depends on Streamlit.
