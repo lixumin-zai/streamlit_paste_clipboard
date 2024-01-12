@@ -15,7 +15,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="",
     packages=setuptools.find_packages(where="."),
-    include_package_data=True,
+    package_dir={"": "streamlit_paste_clipboard"},
     classifiers=[],
     python_requires=">=3.8",
     install_requires=[
