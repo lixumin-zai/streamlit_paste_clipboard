@@ -1,4 +1,4 @@
-# streamlit-custom-component
+# streamlit_paste_clipboard
 
 Paste clipboard image
 

@@ -8,7 +8,7 @@ from PIL import Image
 
 frontend_dir = (Path(__file__).parent / "frontend").absolute()
 _component_func = components.declare_component(
-    "my_component", path=str(frontend_dir)
+    "streamlit_paste_clipboard", path=str(frontend_dir)
 )
 
 def _data_url_to_image(data_url: str) -> Image:
