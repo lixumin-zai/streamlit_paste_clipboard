@@ -1,6 +1,7 @@
 # streamlit_paste_clipboard
 
 Paste clipboard image
+![show](./show.png)
 
 ## Installation instructions
 
