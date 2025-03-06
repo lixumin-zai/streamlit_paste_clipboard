@@ -7,8 +7,8 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="streamlit_paste_clipboard",
-    version="0.0.1",
-    author="lixumin1030@gmail.com",
+    version="0.0.2",
+    author="lismin",
     author_email="lixumin1030@gmail.com",
     description="Paste clipboard image",
     long_description=long_description,
