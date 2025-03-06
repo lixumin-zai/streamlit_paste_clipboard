@@ -40,11 +40,10 @@ function sendValue(value) {
 function onRender(event) {
 
     if (!window.rendered) {
-        document.addEventListener('paste', (event) => {
+        var imageContainer = document.getElementById("image-container");
+        imageContainer.addEventListener('paste', (event) => {
             var items = (event.clipboardData || event.originalEvent.clipboardData).items;
             // console.log(JSON.stringify(items)); // 输出剪切板内容
-        
-            var imageContainer = document.getElementById("image-container");
             imageContainer.innerHTML = ''; // 清除容器中现有的所有内容
             for (let index in items) {
                 var item = items[index];
@@ -75,7 +74,18 @@ function onRender(event) {
                     });
                 }
             }
+            
         });
+        var input = document.getElementById("input-box");
+        input.addEventListener('input', function () {
+            imageContainer.innerHTML = ''; // 清除容器中现有的所有内容
+            var img = document.createElement("img"); // 创建新的图片元素
+            img.src = input.value;
+            imageContainer.appendChild(img);
+            sendValue(input.value)
+            imageContainer.focus(); // 使 image-container 获得焦点
+        });
+        
     window.rendered = true;
   }
 }

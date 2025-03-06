@@ -28,15 +28,25 @@
         }
         #image-container img {
             max-width: 100%; /* 最大宽度为容器宽度 */
-            max-height: 100%; /* 最大高度为容器高度 */
+            max-height: 75%; /* 最大高度为容器高度 */
             object-fit: cover; /* 图片填充方式 */
+        }
+        #input-box {
+            position: absolute;
+            bottom: 15px;
+            width: 270px;
+            padding: 8px;
+            border: none;
+            border-radius: 15px;
+            outline: none;
         }
     </style>
 </head>
 <body>
     <div id="image-container">
-        <p>Paste Clipboard</p>
+        <p>请黏贴图片</p>
     </div>
+    <input type="text" id="input-box" placeholder="请黏贴url">
     <script src="script.js"></script>
 </body>
 </html>
